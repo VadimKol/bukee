@@ -7,44 +7,5 @@ html(lang="zxx")
 	head
 		include ../includes/head
 	body
-		.page-main
-			.wrapper
-				.nav
-					= '\n\t\t\t\t\t'
-					a(href="#")._logo
-					ul.nav-list
-						li
-							a(href="")._item Home
-						li
-							a(href="")._item About
-						li
-							a(href="")._item Contents
-						li
-							a(href="")._item Books
-						li
-							a(href="")._item Education
-						li
-							a(href="")._item Skills
-						li
-							a(href="")._item Portfolio
-						li
-							a(href="")._item Clients
-						li
-							a(href="")._item Contact
-				.header-box
-					.header-box-book
-						h2._title Good book
-							span._subtitle Don’t judge a book by its cover
-						p._author - By Emma Anderson
-					.header-box-desc
-						p._author - By Emma Anderson
-						h1 BUKEE: THE BOOK
-							span A room without books is like a body without a soul
-						p._text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-						p._text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-						= '\n\t\t\t\t\t\t'
-						a(href="")._btn.btn-primary Buy this book - $15.00
-						= '\n\t\t\t\t\t\t'
-						small * Some conditions may applicable
-		.page-next
+		block content
 		include ../includes/scripts
