@@ -219,14 +219,14 @@ export const images = () => gulp.src(paths.images.src)
 		}),
 		imageminPngquant({
 			speed: 5,
-			quality: '30-50'
+			quality: [0.3, 0.5]
 		}),
 		imageminZopfli({
 			more: true
 		}),
 		imageminMozjpeg({
 			progressive: true,
-			quality: 70
+			quality: 90
 		}),
 		imagemin.svgo({
 			plugins: [
