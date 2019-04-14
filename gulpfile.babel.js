@@ -65,7 +65,7 @@ const webpackConfig = require("./webpack.config.js"),
 			src: [
 				"./src/img/**/*.{jpg,jpeg,png,gif,svg}",
 				"!./src/img/svg/*.svg",
-				"!./src/img/favicon.{jpg,jpeg,png,gif}"
+				"!./src/img/favicon.{jpg,jpeg,png,gif,svg}"
 			],
 			dist: "./dist/img/",
 			watch: "./src/img/**/*.{jpg,jpeg,png,gif,svg}"
@@ -81,7 +81,7 @@ const webpackConfig = require("./webpack.config.js"),
 			watch: "./src/fonts/**/*.{ttf,otf,woff,woff2}"
 		},
 		favicons: {
-			src: "./src/img/favicon.{jpg,jpeg,png,gif}",
+			src: "./src/img/favicon.{jpg,jpeg,png,gif,svg}",
 			dist: "./dist/img/favicons/",
 		},
 		server_config: {
@@ -266,15 +266,20 @@ export const fonts = () => gulp.src(paths.fonts.src)
 
 export const favs = () => gulp.src(paths.favicons.src)
 	.pipe(favicons({
+        appName: "Bukee",
+        appShortName: "Bukee",
+		appDescription: "Training landing page",
+		start_url: "../../index.html",
+		lang: "zxx",
 		icons: {
 			appleIcon: true,
 			favicons: true,
 			online: false,
 			appleStartup: false,
-			android: false,
+			android: true,
 			firefox: false,
 			yandex: false,
-			windows: false,
+			windows: true,
 			coast: false
 		}
 	}))
