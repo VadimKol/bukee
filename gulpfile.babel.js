@@ -156,7 +156,7 @@ export const smartGrid = cb => {
 export const views = () => gulp.src(paths.views.src)
 	.pipe(pug({
 		plugins: [pugbem],
-		pretty: true
+		pretty: '\t'
 	}))
 	.pipe(gulpif(production, replace("main.css", "main.min.css")))
 	.pipe(gulpif(production, replace("main.js", "main.min.js")))

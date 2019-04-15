@@ -3,9 +3,12 @@ include ../utils/mixins
 block variables
 
 doctype html
-html(lang="zxx")
-	head
-		include ../includes/head
-	body
-		block content
-		include ../includes/scripts
+= '\n'
+<html lang="zxx">
+head
+	include ../includes/head
+body
+	block content
+	include ../includes/scripts
+= '\n'
+</html>

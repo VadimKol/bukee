@@ -7,7 +7,7 @@ block content
 	.page-main
 		.wrapper
 			.nav
-				= '\n\t\t\t\t\t'
+				= '\n\t\t\t\t'
 				a(href="#")._logo
 				ul.nav-list
 					li
@@ -28,19 +28,162 @@ block content
 						a(href="")._item Clients
 					li
 						a(href="")._item Contact
-			.header-box
-				.header-box-book
-					h2._title Good book
-						span._subtitle Don’t judge a book by its cover
-					p._author - By Emma Anderson
-				.header-box-desc
-					p._author - By Emma Anderson
-					h1 BUKEE: THE BOOK
-						span A room without books is like a body without a soul
-					p._text Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					p._text Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
-					= '\n\t\t\t\t\t\t'
+			.headerbox
+				.headerbox-book
+					p._title.headers Good book
+						span._subtitle.subheaders Don’t judge a book by its cover
+					p._author.supertitle - By Emma Anderson
+				.headerbox-desc
+					p._author.supertitle - By Emma Anderson
+					h2._title.headers BUKEE: THE BOOK
+						span._subtitle.subheaders A room without books is like a body without a soul
+					p._text.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					p._text.content Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+					= '\n\t\t\t\t\t'
 					a(href="")._btn.btn-primary Buy this book - $15.00
-					= '\n\t\t\t\t\t\t'
+					= '\n\t\t\t\t\t'
 					small * Some conditions may applicable
 	.page-stats
+		.wrapper
+			.desc
+				p._author.supertitle - Book Author
+				h2._title.headers Emma Anderson
+					span._subtitle.subheaders A room without books is like a body without a soul
+				p._text.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				p._text.content Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+				= '\n\t\t\t\t'
+				a(href="")._btn.btn-primary Read full biography
+			.author-img.-right
+				= '\n\t\t\t\t'
+				img(src="img/emma_anderson_first.jpg" alt="Emma Anderson")._pic
+			ul.stats-list
+				li._item 12
+					span Total published books
+				li._item 5
+					span Best selling books
+				li._item 15,000
+					span Happy readers
+	.page-contents
+		.wrapper
+			h2.contents-title.headers Book Contents
+				span.contents-subtitle.subheaders Let’s see what we have covered in the book
+			.box-contents
+				.box-about
+					h3._title About the book
+					p._text.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.
+					p.box-about-features Featured in:
+						= '\n\t\t\t\t\t\t'
+						a(href="" target="_blank")._item.fab.fa-stack-overflow
+						= '\n\t\t\t\t\t\t'
+						a(href="" target="_blank")._item.fab.fa-amazon
+						= '\n\t\t\t\t\t\t'
+						a(href="" target="_blank")._item.fab.fa-sass
+				.box-toc
+					h3._title Table of contents
+					ol.box-toc-list
+						li._element Lorem ipsum dolor sit amet
+						li._element Consectetur adipisicing elit
+						li._element Labore et dolore magna
+						li._element Consectetur adipisicing elit
+						li._element Labore et dolore magna
+						li._element Lorem ipsum dolor sit amet
+						li._element Consectetur adipisicing elit
+						li._element Labore et dolore magna
+						li._element Consectetur adipisicing elit
+						li._element Labore et dolore magna
+					button(type="button")._btn.btn-primary More
+	.page-books
+		.wrapper
+			h2.books-title.headers Other Books
+				span.books-subtitle.subheaders Some books you might be interested in
+			.flex-books
+				.flex-books-item
+					.box-book
+						p._title.headers Inception
+							span._subtitle.subheaders Books are the best friends
+						p._author.supertitle - By Emma Anderson
+					h3._title Inception
+					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					= '\n\t\t\t\t\t'
+					a(href="") READ MORE
+				.flex-books-item
+					.box-book
+						p._title.headers Fight Club
+							span._subtitle.subheaders Books are the best friends
+						p._author.supertitle - By Emma Anderson
+					h3._title Fight Club
+					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					= '\n\t\t\t\t\t'
+					a(href="") READ MORE
+				.flex-books-item
+					.box-book
+						p._title.headers Daredevils
+							span._subtitle.subheaders Books are the best friends
+						p._author.supertitle - By Emma Anderson
+					h3._title Daredevils
+					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+					= '\n\t\t\t\t\t'
+					a(href="") READ MORE
+			= '\n\t\t\t'
+			a(href="").books-btn.btn-primary Browse all books
+	.page-testimonials
+		.wrapper.slider
+			.slider-item
+				.slider-item-ava
+					= '\n\t\t\t\t\t'
+					img(src="img/avatar.jpg" alt="Kate Dennings")._pic
+				p._name Kate Dennings
+					span._position Calligraphy Expert
+				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+			.slider-item(hidden)
+				.slider-item-ava
+					= '\n\t\t\t\t\t'
+					img(src="img/avatar.jpg" alt="Kate Dennings")._pic
+				p._name Kate Dennings
+					span._position Calligraphy Expert
+				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+			.slider-item(hidden)
+				.slider-item-ava
+					= '\n\t\t\t\t\t'
+					img(src="img/avatar.jpg" alt="Kate Dennings")._pic
+				p._name Kate Dennings
+					span._position Calligraphy Expert
+				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+	.page-news
+		.wrapper
+			.author-img.-left
+				= '\n\t\t\t\t'
+				img(src="img/emma_anderson_second.jpg" alt="Emma Anderson")._pic
+			.news
+				p._author.supertitle - Emma Anderson
+				h2._title.headers Upcoming Events
+					span._subtitle.subheaders Some upcoming events you might be interested in
+				.news-block
+					h3._title <time datetime="2018-11-21">November&nbsp;21,&nbsp;2018</time>Book signing - San francisco, CA
+					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+					= '\n\t\t\t\t\t'
+					a(href="")._btn.btn-primary Register
+				.news-block
+					h3._title <time datetime="2018-11-21">November&nbsp;21,&nbsp;2018</time>Book reading - Los Angeles, CA
+					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+					= '\n\t\t\t\t\t'
+					a(href="")._btn.btn-primary Register
+	.page-blog
+		.wrapper
+			h2.blog-title.headers Latest from Blog
+				span.blog-subtitle.subheaders Some of the latest posts from my personal blog
+			.blog
+				.blog-item
+					= '\n\t\t\t\t\t'
+					img(src="img/coffee_square.jpg" alt="Coffee")._img
+					h3._title Importance of light in photography
+
+				.blog-item
+					= '\n\t\t\t\t\t'
+					img(src="img/coffee_narrow.jpg" alt="Coffee")._img
+					h3._title The tools you need for the perfection
+
+				.blog-item
+					= '\n\t\t\t\t\t'
+					img(src="img/coffee_wide.jpg" alt="Coffee")._img
+					h3._title Knowing the difference is important
