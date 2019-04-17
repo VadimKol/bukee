@@ -10,24 +10,9 @@ block content
 				= '\n\t\t\t\t'
 				a(href="#")._logo
 				ul.nav-list
-					li
-						a(href="")._item Home
-					li
-						a(href="")._item About
-					li
-						a(href="")._item Contents
-					li
-						a(href="")._item Books
-					li
-						a(href="")._item Education
-					li
-						a(href="")._item Skills
-					li
-						a(href="")._item Portfolio
-					li
-						a(href="")._item Clients
-					li
-						a(href="")._item Contact
+					each val in ['Home','About','Contents','Books','Education','Skills','Portfolio','Clients','Contact']
+						li
+							a(href="")._item= val
 			.headerbox
 				.headerbox-book
 					p._title.headers Good book
@@ -44,7 +29,7 @@ block content
 					= '\n\t\t\t\t\t'
 					small * Some conditions may applicable
 	.page-stats
-		.wrapper
+		.wrapper.-flex
 			.desc
 				p._author.supertitle - Book Author
 				h2._title.headers Emma Anderson
@@ -56,41 +41,34 @@ block content
 			.author-img.-right
 				= '\n\t\t\t\t'
 				img(src="img/emma_anderson_first.jpg" alt="Emma Anderson")._pic
-			ul.stats-list
-				li._item 12
-					span Total published books
-				li._item 5
-					span Best selling books
-				li._item 15,000
-					span Happy readers
+		ul.stats
+			li._item 12
+				span Total published books
+			li._item 5
+				span Best selling books
+			li._item 15,000
+				span Happy readers
 	.page-contents
 		.wrapper
 			h2.contents-title.headers Book Contents
 				span.contents-subtitle.subheaders Let’s see what we have covered in the book
 			.box-contents
-				.box-about
+				.about
 					h3._title About the book
 					p._text.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna ali qua. Ut enim ad minim veniam, quis nostrud exercitation ull amco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillu m dolore eu fugiat nulla pariatur.
-					p.box-about-features Featured in:
+					p._features Featured in:
 						= '\n\t\t\t\t\t\t'
-						a(href="" target="_blank")._item.fab.fa-stack-overflow
+						a(href="" target="_blank").fab.fa-stack-overflow
 						= '\n\t\t\t\t\t\t'
-						a(href="" target="_blank")._item.fab.fa-amazon
+						a(href="" target="_blank").fab.fa-amazon
 						= '\n\t\t\t\t\t\t'
-						a(href="" target="_blank")._item.fab.fa-sass
-				.box-toc
+						a(href="" target="_blank").fab.fa-sass
+				.toc
 					h3._title Table of contents
-					ol.box-toc-list
-						li._element Lorem ipsum dolor sit amet
-						li._element Consectetur adipisicing elit
-						li._element Labore et dolore magna
-						li._element Consectetur adipisicing elit
-						li._element Labore et dolore magna
-						li._element Lorem ipsum dolor sit amet
-						li._element Consectetur adipisicing elit
-						li._element Labore et dolore magna
-						li._element Consectetur adipisicing elit
-						li._element Labore et dolore magna
+					ol.toc-list
+						each i in [0,1]
+							each val in ["Lorem ipsum dolor sit amet","Consectetur adipisicing elit","Labore et dolore magna","Consectetur adipisicing elit","Labore et dolore magna"]
+								li._element=val
 					button(type="button")._btn.btn-primary More
 	.page-books
 		.wrapper
@@ -129,28 +107,28 @@ block content
 	.page-testimonials
 		.wrapper.slider
 			.slider-item
-				.slider-item-ava
+				.ava
 					= '\n\t\t\t\t\t'
 					img(src="img/avatar.jpg" alt="Kate Dennings")._pic
 				p._name Kate Dennings
 					span._position Calligraphy Expert
 				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
 			.slider-item(hidden)
-				.slider-item-ava
+				.ava
 					= '\n\t\t\t\t\t'
 					img(src="img/avatar.jpg" alt="Kate Dennings")._pic
 				p._name Kate Dennings
 					span._position Calligraphy Expert
 				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
 			.slider-item(hidden)
-				.slider-item-ava
+				.ava
 					= '\n\t\t\t\t\t'
 					img(src="img/avatar.jpg" alt="Kate Dennings")._pic
 				p._name Kate Dennings
 					span._position Calligraphy Expert
 				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
 	.page-news
-		.wrapper
+		.wrapper.-flex
 			.author-img.-left
 				= '\n\t\t\t\t'
 				img(src="img/emma_anderson_second.jpg" alt="Emma Anderson")._pic
@@ -177,13 +155,51 @@ block content
 					= '\n\t\t\t\t\t'
 					img(src="img/coffee_square.jpg" alt="Coffee")._img
 					h3._title Importance of light in photography
-
+						span._subtitle By 
+							span._subtitle.-green Emma Anderson - <time datetime="2018-06-20">June&nbsp;20,&nbsp;2018</time>
 				.blog-item
 					= '\n\t\t\t\t\t'
 					img(src="img/coffee_narrow.jpg" alt="Coffee")._img
 					h3._title The tools you need for the perfection
-
+						span._subtitle By 
+							span._subtitle.-green Emma Anderson - <time datetime="2018-06-25">June&nbsp;25,&nbsp;2018</time>
 				.blog-item
 					= '\n\t\t\t\t\t'
 					img(src="img/coffee_wide.jpg" alt="Coffee")._img
 					h3._title Knowing the difference is important
+						span._subtitle By 
+							span._subtitle.-green Emma Anderson - <time datetime="2018-08-22">August&nbsp;22,&nbsp;2018</time>
+			= '\n\t\t\t'
+			a(href="").blog-btn.btn-primary Read more in the blog
+	.page-subscribe
+		.wrapper.-flex
+			.sub-desc
+				h2._title Join Newsletter
+				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspen disse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+			form(action="Subscribe" method="post").form
+				input(type="email" placeholder="Enter your email")._email
+				button(type="submit")._btn.btn-primary Subscribe
+	.page-footer
+		.wrapper.-flex
+			.main-text
+				= '\n\t\t\t\t'
+				a(href="#")._logo
+				p._text.content Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				p._copyright.content &copy; 2018 Bukee Private Limited.
+			.links
+				h3._title Useful Links
+				ul.links-list
+					each val in ["About Bukee","Explore Our Ecosystem","Monthly Community Meetup","Privacy Policy"]
+						li
+							a(href="")._item=val
+			.contacts
+				h3._title Our Contacts
+				//добавить это свойство в css
+				p(style="white-space: pre-line")._address.content.
+					Amphitheatre Parkway, CA, 94043
+					Call us on: #[a(href="tel:+4455663322") +4455663322]
+					Email: #[a(href="mailto:support@bukee.mail") support@bukee.mail]
+				ul._social
+					each val in ['facebook-f','twitter','twitch','youtube','slack-hash','whatsapp']
+						li
+							a.fab(href="" target="_blank" class='fa-'+val)
