@@ -11,8 +11,14 @@ block content
 				a(href="")._logo
 				ul.nav-list
 					each val, index in ['Home','About','Contents','Books','Education','Skills','Portfolio','Clients','Contact']
-						li
-							a._item(class=index===0?"nav-list__item--active":"" href="")= val
+						//-li
+							a(href="")._item+index===0?.-active= val
+						if index===0
+							li
+								a(href="")._item.-active= val
+						else
+							li
+								a(href="")._item= val
 			.headerbox
 				.headerbox-book
 					p._title.headers.headers--white Good book
@@ -25,7 +31,7 @@ block content
 					p._text.content.content--white Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 					p._text.content.content--white Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
 					= '\n\t\t\t\t\t'
-					a(href="")._btn.btn-primary Buy this book - $15.00
+					a(href="#")._btn.btn-primary Buy this book - $15.00
 					= '\n\t\t\t\t\t'
 					small._tip * Some conditions may applicable
 	.page-stats
