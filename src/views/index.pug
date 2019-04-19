@@ -5,29 +5,29 @@ block variables
 
 block content
 	.page-main
-		.wrapper
+		.wrapper.-lines
 			.nav
 				= '\n\t\t\t\t'
-				a(href="#")._logo
+				a(href="")._logo
 				ul.nav-list
-					each val in ['Home','About','Contents','Books','Education','Skills','Portfolio','Clients','Contact']
+					each val, index in ['Home','About','Contents','Books','Education','Skills','Portfolio','Clients','Contact']
 						li
-							a(href="")._item= val
+							a._item(class=index===0?"nav-list__item--active":"" href="")= val
 			.headerbox
 				.headerbox-book
-					p._title.headers Good book
+					p._title.headers.headers--white Good book
 						span._subtitle.subheaders Don’t judge a book by its cover
-					p._author.supertitle - By Emma Anderson
+					p._author.supertitle.supertitle--green - By Emma Anderson
 				.headerbox-desc
-					p._author.supertitle - By Emma Anderson
-					h2._title.headers BUKEE: THE BOOK
+					p._author.supertitle.supertitle--white - By Emma Anderson
+					h2._title.headers.headers--white BUKEE: THE BOOK
 						span._subtitle.subheaders A room without books is like a body without a soul
-					p._text.content Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					p._text.content Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.
+					p._text.content.content--white Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					p._text.content.content--white Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut
 					= '\n\t\t\t\t\t'
 					a(href="")._btn.btn-primary Buy this book - $15.00
 					= '\n\t\t\t\t\t'
-					small * Some conditions may applicable
+					small._tip * Some conditions may applicable
 	.page-stats
 		.wrapper.-flex
 			.desc
@@ -79,7 +79,7 @@ block content
 					.box-book
 						p._title.headers Inception
 							span._subtitle.subheaders Books are the best friends
-						p._author.supertitle - By Emma Anderson
+						p._author.supertitle.supertitle--green - By Emma Anderson
 					h3._title Inception
 					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					= '\n\t\t\t\t\t'
@@ -88,7 +88,7 @@ block content
 					.box-book
 						p._title.headers Fight Club
 							span._subtitle.subheaders Books are the best friends
-						p._author.supertitle - By Emma Anderson
+						p._author.supertitle.supertitle--green - By Emma Anderson
 					h3._title Fight Club
 					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					= '\n\t\t\t\t\t'
@@ -97,7 +97,7 @@ block content
 					.box-book
 						p._title.headers Daredevils
 							span._subtitle.subheaders Books are the best friends
-						p._author.supertitle - By Emma Anderson
+						p._author.supertitle.supertitle--green - By Emma Anderson
 					h3._title Daredevils
 					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					= '\n\t\t\t\t\t'
