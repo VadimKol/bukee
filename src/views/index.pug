@@ -11,8 +11,6 @@ block content
 				a(href="")._logo
 				ul.nav-list
 					each val, index in ['Home','About','Contents','Books','Education','Skills','Portfolio','Clients','Contact']
-						//-li
-							a(href="")._item+index===0?.-active= val
 						if index===0
 							li
 								a(href="")._item.-active= val
