@@ -94,6 +94,10 @@ img {
 }
 .fab {
 	color: $subheaderscolor;
+	transition: color 0.2s;
+	&:hover, &:focus {
+		color: $whitecolor;
+	}
 }
 
 /*headers*/
@@ -290,7 +294,7 @@ img {
 			margin: 25px 0 28px;
 			padding-left: 35px;
 			columns: 2;
-			column-gap: 62px;
+			column-gap: 53px;
 			counter-reset: list;
 			list-style-type: none;
 			&__element {
@@ -319,6 +323,7 @@ img {
 			}
 		}
 		&__btn {
+			display: none;
 			padding: 11px 43px 13px 46px;
 			margin-left: 1px;
 		}
@@ -326,12 +331,75 @@ img {
 	.fab {
 		transform: translateY(1px);
 		margin-right: 8px;
+		&:hover, &:focus {
+			color: $typography;
+		}
 	}
 	.fa-stack-overflow {
 		margin-left: 16px;
 	}
 }
-
+/*page-books*/
+.books-title {
+	text-indent: 2px;
+}
+.books-subtitle {
+	text-indent: 0;
+}
+.flex-books {
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-around;
+	margin: 85px 0 84px;
+	&-item {
+		flex-basis: 32.5%;
+		.box-book {
+			width: 269px;
+			height: 409px;
+			background-image: url(../img/minibook.svg);
+			margin: 0 auto 35px;
+			box-sizing: border-box;
+			padding: 67px 0 0 32px;
+			&__title {
+				text-transform: uppercase;
+				font-size: 24px;
+				margin: 0 0 238px;
+				text-indent: 2px;
+			}
+			&__subtitle {
+				font-family: 'Open Sans', sans-serif;
+				font-size: 12px;
+				text-indent: 0;
+				margin: 7px 0 0;
+			}
+			&__author {
+				font-size: 12px;
+				text-indent: -12px;
+			}
+		}
+		&__title {
+			font-family: 'Roboto Slab', serif;
+			font-size: 24px;
+			letter-spacing: $primarytracking;
+			line-height: 1;
+			color: $headerscolor;
+			margin: 0 0 17px;
+		}
+		&__text {
+			margin: 0 0 17px;
+		}
+		&__more {
+			font-weight: bold;
+			color: $subheaderscolor;
+			&:hover, &:focus {
+				text-decoration: underline;
+			}
+		}
+	}
+}
+.books-btn {
+	padding: 11px 32px 13px 33px;
+}
 /*pages*/
 .page-main {
 	background-color: #426384;
@@ -345,7 +413,11 @@ img {
 	background-color: #f5f6fa;
 }
 .page-contents {
-	padding: 143px 0 256px;
+	padding: 143px 0 144px;
+}
+.page-books {
+	padding: 142px 0;
+	text-align: center;
 }
 .page-footer {
 	background-color: $headerscolor;

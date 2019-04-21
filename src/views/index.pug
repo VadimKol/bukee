@@ -70,7 +70,7 @@ block content
 				.toc
 					h3._title Table of contents
 					ol.toc-list
-						each i in [0,1]
+						each i in [0,1,2,3]
 							each val in ["Lorem ipsum dolor sit amet","Consectetur adipisicing elit","Labore et dolore magna","Consectetur adipisicing elit","Labore et dolore magna"]
 								li._element=val
 					button(type="button")._btn.btn-primary More
@@ -81,33 +81,33 @@ block content
 			.flex-books
 				.flex-books-item
 					.box-book
-						p._title.headers.headers--center Inception
+						p._title.headers.headers--white.headers--center Inception
 							span._subtitle.subheaders Books are the best friends
 						p._author.supertitle.supertitle--green - By Emma Anderson
 					h3._title Inception
 					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					= '\n\t\t\t\t\t'
-					a(href="") READ MORE
+					a(href="")._more READ MORE
 				.flex-books-item
 					.box-book
-						p._title.headers.headers--center Fight Club
+						p._title.headers.headers--white.headers--center Fight Club
 							span._subtitle.subheaders Books are the best friends
 						p._author.supertitle.supertitle--green - By Emma Anderson
 					h3._title Fight Club
 					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					= '\n\t\t\t\t\t'
-					a(href="") READ MORE
+					a(href="")._more READ MORE
 				.flex-books-item
 					.box-book
-						p._title.headers.headers--center Daredevils
+						p._title.headers.headers--white.headers--center Daredevils
 							span._subtitle.subheaders Books are the best friends
 						p._author.supertitle.supertitle--green - By Emma Anderson
 					h3._title Daredevils
 					p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
 					= '\n\t\t\t\t\t'
-					a(href="") READ MORE
+					a(href="")._more READ MORE
 			= '\n\t\t\t'
-			a(href="").books-btn.btn-primary Browse all books
+			a(href="#").books-btn.btn-primary Browse all books
 	.page-testimonials
 		.wrapper.slider
 			.slider-item
