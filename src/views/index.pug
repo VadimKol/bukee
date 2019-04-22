@@ -109,7 +109,25 @@ block content
 			= '\n\t\t\t'
 			a(href="#").books-btn.btn-primary Browse all books
 	.page-testimonials
+		.bg-black-left
+		.bg-black-right
 		.wrapper.slider
+			.slider-item
+				.ava
+					= '\n\t\t\t\t\t'
+					img(src="img/avatar2.jpg" alt="John Doe")._pic
+				p._name John Doe
+					span._position Editor
+				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				i.fas.fa-quote-right
+			.slider-item
+				.ava
+					= '\n\t\t\t\t\t'
+					img(src="img/avatar3.jpg" alt="Jane Doe")._pic
+				p._name Jane Doe
+					span._position Designer
+				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				i.fas.fa-quote-right
 			.slider-item
 				.ava
 					= '\n\t\t\t\t\t'
@@ -117,20 +135,7 @@ block content
 				p._name Kate Dennings
 					span._position Calligraphy Expert
 				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-			.slider-item(hidden)
-				.ava
-					= '\n\t\t\t\t\t'
-					img(src="img/avatar.jpg" alt="Kate Dennings")._pic
-				p._name Kate Dennings
-					span._position Calligraphy Expert
-				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-			.slider-item(hidden)
-				.ava
-					= '\n\t\t\t\t\t'
-					img(src="img/avatar.jpg" alt="Kate Dennings")._pic
-				p._name Kate Dennings
-					span._position Calligraphy Expert
-				p._text.content Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
+				i.fas.fa-quote-right
 	.page-news
 		.wrapper.-flex
 			.author-img.-left
