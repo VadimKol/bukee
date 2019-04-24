@@ -639,8 +639,10 @@ img {
 		letter-spacing: $primarytracking;
 		line-height: 1.6;
 		color: $whitecolor;
-		padding: 11px 28px 13px 28px;
+		border: 1px solid $headerscolor;
+		padding: 10px 27px 12px;
 		margin: 5px 0 20px;
+		transition: border 0.2s;
 		&::placeholder               {color: #9191b5;}
 		&::-webkit-input-placeholder {color: #9191b5;}
 		&::-moz-placeholder          {color: #9191b5;opacity: 1;}
@@ -649,6 +651,7 @@ img {
 		&::-ms-input-placeholder     {color: #9191b5;}
 		&:focus {
 			outline: none;
+			border: 1px solid $subheaderscolor;
 		}
 	}
 	&__btn {
