@@ -164,25 +164,25 @@ block content
 					.screen
 						img(src="img/coffee_square.jpg" alt="Coffee")._img
 					h3._title Importance of light in photography
-						span._subtitle By 
-							span Emma Anderson 
-							|- <time class="blog__date" datetime="2018-06-20">June&nbsp;20<span>,</span>&nbsp;2018</time>
+						span._subtitle By
+							span  Emma Anderson
+							| - <time class="blog__date" datetime="2018-06-20">June&nbsp;20<span>,</span>&nbsp;2018</time>
 					p._text.content Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
 				.blog-item
 					.screen
 						img(src="img/coffee_narrow.jpg" alt="Coffee")._img
 					h3._title The tools you need for the perfection
-						span._subtitle By 
-							span Emma Anderson 
-							|- <time class="blog__date" datetime="2018-06-25">June&nbsp;25<span>,</span>&nbsp;2018</time>
+						span._subtitle By
+							span  Emma Anderson
+							| - <time class="blog__date" datetime="2018-06-25">June&nbsp;25<span>,</span>&nbsp;2018</time>
 					p._text.content Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
 				.blog-item
 					.screen
 						img(src="img/coffee_wide.jpg" alt="Coffee")._img
 					h3._title Knowing the difference is important
-						span._subtitle By 
-							span Emma Anderson 
-							|- <time class="blog__date" datetime="2018-08-22">August&nbsp;22<span>,</span>&nbsp;2018</time>
+						span._subtitle By
+							span  Emma Anderson
+							| - <time class="blog__date" datetime="2018-08-22">August&nbsp;22<span>,</span>&nbsp;2018</time>
 					p._text.content Lorem ipsum dolor sit amet, conse ctetur adipi scing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
 			= '\n\t\t\t'
 			a(href="#").blog-btn.btn-primary Read more in the blog
@@ -198,7 +198,7 @@ block content
 		.wrapper.-flex
 			.main-text
 				= '\n\t\t\t\t'
-				a(href="#")._logo
+				a(href="")._logo
 				p._text.content Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 				p._copyright.content &copy; 2018 Bukee Private Limited.
 			.links
@@ -209,12 +209,8 @@ block content
 							a(href="")._item=val
 			.contacts
 				h3._title Our Contacts
-				//добавить это свойство в css
-				p(style="white-space: pre-line")._address.content.
-					Amphitheatre Parkway, CA, 94043
-					Call us on: #[a(href="tel:+4455663322") +4455663322]
-					Email: #[a(href="mailto:support@bukee.mail") support@bukee.mail]
-				ul._social
+				p._address.content Amphitheatre Parkway, CA, 94043#[br]Call us on: #[a(href="tel:+4455663322").tel +4455663322]#[br]Email: #[a(href="mailto:support@bukee.mail").mail support@bukee.mail]
+				ul.social
 					each val in ['facebook-f','twitter','twitch','youtube','slack-hash','whatsapp']
-						li
+						li._item
 							a.fab(href="" target="_blank" class='fa-'+val)

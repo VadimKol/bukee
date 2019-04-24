@@ -614,6 +614,117 @@ img {
 	padding: 11px 31px 13px 34px;
 	margin-left: -4px;
 }
+/*page-subscribe*/
+.sub-desc {
+	flex-basis: 47.8%;
+	&__title {
+		font-family: 'Roboto Slab', serif;
+		font-size: 48px;
+		letter-spacing: $secondraytracking;
+		line-height: 1;
+		color: $headerscolor;
+		margin: 0 0 12px;
+	}
+	&__text {
+		padding-left: 1px;
+	}
+}
+.form {
+	flex-basis: 571px;
+	&__email {
+		width: calc(100% - 56px);
+		border-radius: 3px;
+		border: none;
+		background-color: $headerscolor;
+		letter-spacing: $primarytracking;
+		line-height: 1.6;
+		color: $whitecolor;
+		padding: 11px 28px 13px 28px;
+		margin: 5px 0 20px;
+		&::placeholder               {color: #9191b5;}
+		&::-webkit-input-placeholder {color: #9191b5;}
+		&::-moz-placeholder          {color: #9191b5;opacity: 1;}
+		&:-moz-placeholder           {color: #9191b5;}
+		&:-ms-input-placeholder      {color: #9191b5;}
+		&::-ms-input-placeholder     {color: #9191b5;}
+		&:focus {
+			outline: none;
+		}
+	}
+	&__btn {
+		width: 100%;
+		padding: 11px 0 13px;
+		text-indent: 4px;
+	}
+}
+/*page-footer*/
+.main-text {
+	flex-basis: 34.1%;
+	&__logo {
+		display: block;
+		width: 137px;
+		height: 28px;
+		background-image: url(../img/logo_footer.svg);
+		margin: 0 0 26px;
+	}
+	&__text, &__copyright {
+		letter-spacing: $secondraytracking;
+		color: $blackcolor;
+	}
+}
+.links, .contacts {
+	&__title {
+		font-family: 'Roboto Slab', serif;
+		font-size: 18px;
+		letter-spacing: $secondraytracking;
+		line-height: normal;
+		color: $subheaderscolor;
+		text-transform: uppercase;
+		margin: 9px 0 0px;
+	}
+}
+.links {
+	flex-basis: 25.6%;
+	&-list {
+		list-style-type: none;
+		margin: 18px 0 0;
+		text-indent: 1px;
+		&__item {
+			letter-spacing: $secondraytracking;
+			color: $blackcolor;
+			line-height: 1.866666666;
+			&:hover {
+				color: $whitecolor;
+				text-decoration: underline;
+			}			
+		}
+	}
+}
+.contacts {
+	flex-basis: 23.1%;
+	&__address {
+		letter-spacing: $secondraytracking;
+		color: $blackcolor;
+		margin: 20px 0 11px -1px;
+		&::first-line {
+			white-space: normal;
+		}
+		.tel,.mail {
+			color: $blackcolor;
+			&:hover {
+				color: $whitecolor;
+				text-decoration: underline;
+			}
+		}
+	}
+	.social {
+		display: flex;
+		list-style-type: none;
+		&__item {
+			margin-right: 13px;
+		}
+	}
+}
 /*pages*/
 .page-main {
 	background-color: #426384;
@@ -643,6 +754,12 @@ img {
 .page-blog {
 	padding: 146px 0 161px;
 	text-align: center;
+}
+.page-subscribe {
+	padding: 155px 0 130px;
+}
+.page-footer {
+	padding: 160px 0 130px;
 }
 .page-footer {
 	background-color: $headerscolor;
