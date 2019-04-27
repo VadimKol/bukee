@@ -195,22 +195,23 @@ block content
 				input(type="email" placeholder="Enter your email")._email
 				button(type="submit")._btn.btn-primary Subscribe
 	.page-footer
-		.wrapper.-flex
-			.main-text
-				= '\n\t\t\t\t'
-				a(href="")._logo
-				p._text.content Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				p._copyright.content &copy; 2018 Bukee Private Limited.
-			.links
-				h3._title Useful Links
-				ul.links-list
-					each val in ["About Bukee","Explore Our Ecosystem","Monthly Community Meetup","Privacy Policy"]
-						li
-							a(href="")._item=val
-			.contacts
-				h3._title Our Contacts
-				p._address.content Amphitheatre Parkway, CA, 94043#[br]Call us on: #[a(href="tel:+4455663322").tel +4455663322]#[br]Email: #[a(href="mailto:support@bukee.mail").mail support@bukee.mail]
-				ul.social
-					each val in ['facebook-f','twitter','twitch','youtube','slack-hash','whatsapp']
-						li._item
-							a.fab(href="" target="_blank" class='fa-'+val)
+		.wrapper
+			.container
+				.main-text
+					= '\n\t\t\t\t'
+					a(href="")._logo
+					p._text.content Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+					p._copyright.content &copy; 2018 Bukee Private Limited.
+				.links
+					h3._title Useful Links
+					ul.links-list
+						each val in ["About Bukee","Explore Our Ecosystem","Monthly Community Meetup","Privacy Policy"]
+							li
+								a(href="")._item=val
+				.contacts
+					h3._title Our Contacts
+					p._address.content Amphitheatre Parkway, CA, 94043#[br]Call us on: #[a(href="tel:+4455663322").tel +4455663322]#[br]Email: #[a(href="mailto:support@bukee.mail").mail support@bukee.mail]
+					ul.social
+						each val in ['facebook-f','twitter','twitch','youtube','slack-hash','whatsapp']
+							li._item
+								a.fab(href="" target="_blank" class='fa-'+val)

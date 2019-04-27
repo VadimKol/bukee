@@ -671,6 +671,11 @@ img {
 	}
 }
 /*page-footer*/
+.container {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
 .main-text {
 	flex-basis: 34.1%;
 	&__logo {

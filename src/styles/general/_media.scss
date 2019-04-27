@@ -1,12 +1,113 @@
 @media screen and (max-width: 1230px) {
+    .wrapper {
+        max-width: 900px;
+        &--flex {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    /*page-books*/
+    .page-books {
+        padding: 71px 0 95px;
+    }
+    .flex-books {
+        justify-content: space-between;
+        margin: 0 0 42px;
+    }
     /* page-blog*/
     .page-blog {
         padding: 73px 0 80px;
     }
     .blog {
         flex-direction: column;
-        max-width: 900px;
         margin: 0 auto 30px;
+    }
+    /*page-subscribe*/
+    .page-subscribe {
+        padding: 77px 0 65px;
+    }
+    .sub-desc {
+        flex-basis: auto;
+        width: 100%;
+        &__title {
+            text-align: center;
+        }
+    }
+    .form {
+        flex-basis: auto;
+        width: 571px;
+    }
+    /*page-footer*/
+    .page-footer {
+        padding: 56px 0 65px;
+    }
+    .contacts {
+        flex-basis: 28.3%;
+    }
+}
+@media screen and (max-width: 950px) {
+    /*page-books*/
+    .flex-books {
+        flex-direction: column;
+        margin: 130px 0 21px;
+        &-item {
+            margin: 0 0 115px;
+            .box-book {
+                transform: scale(1.45);
+                margin: 0 auto 110px;
+            }
+            &:last-child {
+                margin: 0 0 21px;
+            }
+            &__text {
+                margin: 0 auto 17px;
+                max-width: 381px;
+            }
+        }
+    }
+    /*page-footer*/
+    .main-text {
+        flex-basis: 296px;
+    }
+    .links {
+        flex-basis: 230px;
+    }
+    .contacts {
+        flex-basis: 255px;
+    }
+}
+@media screen and (max-width: 827px) {
+    /*page-footer*/
+    .container {
+        max-width: 632px;
+        margin: 0 auto;
+    }
+    .main-text {
+        order: 1;
+        flex-basis: 100%;
+        margin: 20px 0 0;
+    }
+}
+@media screen and (max-width: 620px) {
+    /*page-subscribe*/
+    .form {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    /*page-books*/
+    .flex-books {
+        margin: 0 0 21px;
+        &-item {
+            margin: 0 0 21px;
+            .box-book {
+                transform: scale(1);
+                margin: 0 auto 35px;
+            }
+            &__text {
+                max-width: none;
+            }
+        }
     }
 }
 @media screen and (max-width: 400px) {
