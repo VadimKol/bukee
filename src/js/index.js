@@ -3,7 +3,24 @@ import "./import/components.js";
 
 $(document).ready(function(){
     //no js
+    $(".screen__img").css("min-height","0");
     //no js
+    //alternative for object-fit:cover;
+    $(window).resize(function() { //when resizing browser
+        $(".screen__img").each(function() {
+            if($(this).height() < $(this).parent().height()) {
+                $(this).css({"max-width":"none","max-height":"100%"});
+            }
+            if($(this).width() < $(this).parent().width()) {
+                $(this).css({"max-width":"100%","max-height":"none"});
+            }
+        });
+    });
+    $(".screen__img").each(function() {
+        if($(this).height() < $(this).parent().height()) {
+            $(this).css({"max-width":"none","max-height":"100%"});
+        }
+    });
     //button-More in table of contents
     $(".toc-list").children().slice(10).hide();
     $(".toc__btn").show();
