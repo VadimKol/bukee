@@ -6,6 +6,19 @@
             align-items: center;
         }
     }
+    /*page-contents*/
+    .page-contents {
+        padding: 72px 0;
+    }
+    .box-contents {
+        margin: 0;
+        .about, .toc {
+            flex-basis: auto;
+        }
+        .toc {
+            margin: 20px 0 0;
+        }
+    }
     /*page-books*/
     .page-books {
         padding: 71px 0 95px;
@@ -52,6 +65,7 @@
         margin: 130px 0 21px;
         &-item {
             margin: 0 0 115px;
+            flex-basis: auto;
             .box-book {
                 transform: scale(1.45);
                 margin: 0 auto 110px;
@@ -89,6 +103,11 @@
     }
 }
 @media screen and (max-width: 620px) {
+    /*page-contents*/
+    .box-contents .toc-list {
+        columns: 1;
+        text-indent: 31px;
+    }
     /*page-subscribe*/
     .form {
         width: 100%;
@@ -105,7 +124,7 @@
                 margin: 0 auto 35px;
             }
             &__text {
-                max-width: none;
+                max-width: 313px;
             }
         }
     }
