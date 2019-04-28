@@ -27,6 +27,17 @@
         justify-content: space-between;
         margin: 0 0 42px;
     }
+    /*page-testimonials*/
+    .page-testimonials {
+        padding: 70px 0 55px;
+    }
+    .bg-black-left,
+    .bg-black-right {
+        height: 100%;
+    }
+    .slider-item {
+        padding: 5px 0 0;
+    }
     /* page-blog*/
     .page-blog {
         padding: 73px 0 80px;
@@ -138,6 +149,13 @@
         &__text {
             font-size: 12px;
             letter-spacing: $primarytracking;
+        }
+    }
+}
+@media all and (-ms-high-contrast:none) {
+    .bg-black {
+        &-left,&-right {
+            width: 50.12%;
         }
     }
 }

@@ -9,12 +9,16 @@ $(document).ready(function(){
         $(".toc__btn").click(function(){
             $(".page-contents").css("padding","72px 0");
         });
+        $(".page-testimonials").css("padding","95px 0 89px");
+        $(".slider-item").css("padding","5px 0 0");
     }
     else {
         $(".page-contents").css("padding","143px 0 256px");
         $(".toc__btn").click(function(){
             $(".page-contents").css("padding","143px 0 144px");
         });
+        $(".page-testimonials").css("padding","190px 0 178px");
+        $(".slider-item").css("padding","5px 186px 0");
     }
     //no js
     $(window).resize(function() { //when resizing browser
@@ -26,6 +30,8 @@ $(document).ready(function(){
             $(".toc__btn").click(function(){
                 $(".page-contents").css("padding","72px 0");
             });
+            $(".page-testimonials").css("padding","95px 0 89px");
+            $(".slider-item").css("padding","5px 0 0");
         }
         else {
             $(".page-contents").css("padding","143px 0 256px");
@@ -35,6 +41,8 @@ $(document).ready(function(){
             $(".toc__btn").click(function(){
                 $(".page-contents").css("padding","143px 0 144px");
             });
+            $(".page-testimonials").css("padding","190px 0 178px");
+            $(".slider-item").css("padding","5px 186px 0");
         }
         //alternative for object-fit:cover;
         $(".screen__img").each(function() {
@@ -59,8 +67,6 @@ $(document).ready(function(){
         $(this).hide();
     });
     //slick
-    $(".page-testimonials").css("padding","190px 0 178px");
-    $(".slider-item").css("padding","5px 186px 0");
     $(".bg-black-left").height("100%");
     $(".bg-black-right").height("100%");
     $(".slider").slick({
