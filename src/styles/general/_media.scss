@@ -1,9 +1,36 @@
 @media screen and (max-width: 1230px) {
     .wrapper {
         max-width: 900px;
+        &--lines {
+            padding: 50px 15px 81px;
+        }
         &--flex {
             flex-direction: column;
             align-items: center;
+        }
+    }
+    /*page-main*/
+    .nav {
+        margin-bottom: 90px;
+        &-list {
+            flex-basis: 72%;
+        }
+    }
+    .headerbox {
+        &-book {
+            flex-basis: 368px;
+            height: 576px;
+            padding-left: 33px;
+            margin-right: 37px;
+            &__title {
+                margin: 96px 0 354px;
+            }
+            &__author {
+                padding-left: 45px;
+            }
+        }
+        &-desc {
+            flex-basis: 461px;
         }
     }
     /*page-contents*/
@@ -70,6 +97,36 @@
     }
 }
 @media screen and (max-width: 950px) {
+    .wrapper {
+        &--lines {
+            background-size: contain;
+        }
+    }
+    /*page-main*/
+    .nav {
+        &__logo {
+            margin: 0 auto 20px;
+        }
+        &-list {
+            flex-basis: 100%;
+        }
+    }
+    .headerbox {
+        flex-direction: column-reverse;
+        align-items: center;
+        &-book {
+            flex-basis: 576px;
+            width: 368px;
+            margin: 20px auto 0;
+        }
+        &-desc {
+            flex-basis: auto;
+            width: 100%;
+            &__title {
+                text-align: center;
+            }
+        }
+    }
     /*page-books*/
     .flex-books {
         flex-direction: column;
@@ -113,6 +170,15 @@
         margin: 20px 0 0;
     }
 }
+@media screen and (max-width: 700px) {
+    /*page-main*/
+    .nav-list {
+        li {
+            flex-basis: 33%;
+            margin-bottom: 10px;
+        }
+    }
+}
 @media screen and (max-width: 620px) {
     /*page-contents*/
     .box-contents .toc-list {
@@ -140,6 +206,24 @@
         }
     }
 }
+@media screen and (max-width: 450px) {
+    /*page-main*/
+    .headerbox-book {
+        flex-basis: 392px;
+        width: 251px;
+        padding-left: 22px;
+        &__title {
+            font-size: 24px;
+            margin: 65px 0 240px;
+        }
+        &__subtitle, &__author {
+            font-size: 12px;
+        }
+        &__author {
+            padding-left: 30px;
+        }
+    }
+}
 @media screen and (max-width: 400px) {
     /* page-blog*/
     .blog-item {
@@ -152,10 +236,39 @@
         }
     }
 }
+/*ie*/
 @media all and (-ms-high-contrast:none) {
+    .wrapper {
+        &--lines {
+            background-repeat: no-repeat;
+        }
+    }
     .bg-black {
         &-left,&-right {
             width: 50.12%;
+        }
+    }
+}
+@media screen and (min-width: 1231px) and (-ms-high-contrast:none) {
+    .wrapper {
+        &--lines {
+            background-position-y: -50px;
+        }
+    }
+}
+@media screen and (max-width: 1230px) and (-ms-high-contrast:none) {
+    .wrapper {
+        &--lines {
+            background-origin: padding-box;
+            background-size: 97.1% 100%;
+            background-position: 13px 0;
+        }
+    }
+}
+@media screen and (max-width: 950px) and (-ms-high-contrast:none) {
+    .wrapper {
+        &--lines {
+            background-size: 97.1% 100%;
         }
     }
 }

@@ -31,7 +31,7 @@ img {
 	padding: 0 15px;
 	margin: 0 auto;
 	&--lines {
-		padding: 50px 0 162px;
+		padding: 50px 15px 162px;
 		background-image: url(../img/bg_lines.png);
 		background-origin: content-box;
 		background-size: cover;
@@ -147,6 +147,7 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
 	margin-bottom: 181px;
 	&__logo {
 		flex-basis: 137px;
@@ -158,6 +159,8 @@ img {
 		list-style-type: none;
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
+		text-align: center;
 		&__item {
 			display: inline-block;
 			font-size: 16px;
@@ -168,6 +171,42 @@ img {
 			&:hover, &:focus, &--active {
 				box-shadow: 0 3px #65e496;
 			}
+		}
+	}
+	&__btn-mobile {
+		padding: 0;
+		background-color: transparent;
+		display: none;
+		width: 28px;
+		height: 28px;
+		background-image: url(../img/menu.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&-list-mobile {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: none;
+		width: 100%;
+		background-color: #426384;
+		background-image: linear-gradient(-60deg, #54b7a1 0%, #426384 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#54b7a1', endColorstr='#426384', GradientType=1);
+		li {
+			margin-bottom: 10px;
+		}
+		&__btn-close {
+			position: absolute;
+			top: 51px;
+			right: 17px;
+			padding: 0;
+			background-color: transparent;
+			width: 25px;
+			height: 25px;
+			background-image: url(../img/cross.svg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			vertical-align: bottom;
 		}
 	}
 }

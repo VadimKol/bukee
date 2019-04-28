@@ -17,6 +17,7 @@ block content
 						else
 							li
 								a(href="")._item= val
+				button(type="button")._btn-mobile
 			.headerbox
 				.headerbox-book
 					p._title.headers.headers--white.headers--center Good book
@@ -215,3 +216,13 @@ block content
 						each val in ['facebook-f','twitter','twitch','youtube','slack-hash','whatsapp']
 							li._item
 								a.fab(href="" target="_blank" class='fa-'+val)
+	ul.nav-list.nav-list-mobile
+		each val, index in ['button','Home','About','Contents','Books','Education','Skills','Portfolio','Clients','Contact']
+			if index===0
+				li <button class="nav-list-mobile__btn-close" type="button"></button>
+			else if index===1
+				li
+					a(href="")._item.-active= val
+			else
+				li
+					a(href="")._item= val
