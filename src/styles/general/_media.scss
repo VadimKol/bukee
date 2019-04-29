@@ -71,9 +71,11 @@
         margin: 0;
         .about, .toc {
             flex-basis: auto;
+            width: 100%;
         }
         .toc {
             margin: 20px 0 0;
+            max-width: 571px;
         }
     }
     /*page-books*/
@@ -357,4 +359,32 @@
             background-size: 97.1% 100%;
         }
     }
+}
+/* Safari 5.1-6.0, Chrome 10-24 */
+#{$safari} .nav__logo {
+    width: 137px;
+}
+#{$safari} .nav-list {
+    width: 72%;
+}
+#{$safari} .headerbox-book {
+    width: 368px;
+}
+#{$safari} .headerbox-desc {
+    width: 461px;
+}
+#{$safari} .flex-books-item {
+    width: 32.5%;
+}
+#{$safari} .form__email {
+    width: 90.192644483%;
+}
+#{$safari} .main-text {
+    width: 34.1%;
+}
+#{$safari} .links {
+    width: 25.6%;
+}
+#{$safari} .contacts {
+    width: 28.3%;
 }
