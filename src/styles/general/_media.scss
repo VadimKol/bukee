@@ -382,10 +382,10 @@
     width: 32.5%;
 }
 #{$safari} .slider-item .ava {
-    will-change: transform;
+/*     will-change: transform;
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    -webkit-transform:translateX(-1px) translateZ(0);
+    backface-visibility: hidden; */
+    -webkit-transform: translateX(-1px) translateZ(0);
     transform: translateX(-1px) translateZ(0);
     -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
     mask-image: radial-gradient(circle, white, black);
