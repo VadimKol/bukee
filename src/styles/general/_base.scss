@@ -481,7 +481,7 @@ img {
 			width: 152px;
 			height: 152px;
 			overflow: hidden;
-			border-radius: 50%;
+			border-radius: 76px;
 			margin: 0 auto 22px;
 			transform: translateX(-1px);
 			position: relative;
@@ -589,6 +589,9 @@ img {
 		}
 		&__btn {
 			padding: 11px 27px 13px 34px;
+		}
+		&:last-child {
+			margin: 42px 0 0;
 		}
 	}
 }
@@ -809,7 +812,7 @@ img {
 	padding: 140px 0 111px;
 }
 .page-news {
-	padding: 189px 0 131px;
+	padding: 189px 0 184px;
 }
 .page-blog {
 	padding: 146px 0 161px;
