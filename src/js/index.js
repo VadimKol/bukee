@@ -9,16 +9,20 @@ $(document).ready(function(){
         $(".toc__btn").click(function(){
             $(".page-contents").css("padding","72px 0");
         });
-        $(".page-testimonials").css("padding","95px 0 89px");
-        $(".slider-item").css("padding","5px 0 0");
+        if ($(".box-contents").css("flex-direction") !== "column") {
+            $(".page-testimonials").css("padding","95px 0 89px");
+            $(".slider-item").css("padding","5px 0 0");
+        }
     }
     else {
         $(".page-contents").css("padding","143px 0 256px");
         $(".toc__btn").click(function(){
             $(".page-contents").css("padding","143px 0 144px");
         });
-        $(".page-testimonials").css("padding","190px 0 178px");
-        $(".slider-item").css("padding","5px 186px 0");
+        if ($(".box-contents").css("flex-direction") !== "column") {
+            $(".page-testimonials").css("padding","190px 0 178px");
+            $(".slider-item").css("padding","5px 186px 0");
+        }
     }
     if (window.matchMedia('screen and (max-width: 950px)').matches) {
         $(".nav__btn-mobile").show().css("display","block");
@@ -35,8 +39,10 @@ $(document).ready(function(){
             $(".toc__btn").click(function(){
                 $(".page-contents").css("padding","72px 0");
             });
-            $(".page-testimonials").css("padding","95px 0 89px");
-            $(".slider-item").css("padding","5px 0 0");
+            if ($(".box-contents").css("flex-direction") !== "column") {
+                $(".page-testimonials").css("padding","95px 0 89px");
+                $(".slider-item").css("padding","5px 0 0");
+            }
         }
         else {
             $(".page-contents").css("padding","143px 0 256px");
@@ -46,8 +52,10 @@ $(document).ready(function(){
             $(".toc__btn").click(function(){
                 $(".page-contents").css("padding","143px 0 144px");
             });
-            $(".page-testimonials").css("padding","190px 0 178px");
-            $(".slider-item").css("padding","5px 186px 0");
+            if ($(".box-contents").css("flex-direction") !== "column") {
+                $(".page-testimonials").css("padding","190px 0 178px");
+                $(".slider-item").css("padding","5px 186px 0");
+            }
         }
         if (window.matchMedia('screen and (max-width: 950px)').matches) {
             $(".nav__btn-mobile").show().css("display","block");
@@ -87,11 +95,13 @@ $(document).ready(function(){
         $(this).hide();
     });
     //slick
-    $(".bg-black-left").height("100%");
-    $(".bg-black-right").height("100%");
-    $(".slider").slick({
-        arrows: false,
-        dots: true,
-        initialSlide: 2
-    });
+    if ($(".box-contents").css("flex-direction") !== "column") {
+        $(".bg-black-left").height("100%");
+        $(".bg-black-right").height("100%");
+        $(".slider").slick({
+            arrows: false,
+            dots: true,
+            initialSlide: 2
+        });
+    }
 });
