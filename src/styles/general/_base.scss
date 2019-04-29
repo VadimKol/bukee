@@ -478,21 +478,18 @@ img {
 			outline: none; /*for slick.js*/
 		}
 		.ava {
-			width: 151px;
-			height: 151px;
+			width: 152px;
+			height: 152px;
 			overflow: hidden;
 			border-radius: 50%;
 			margin: 0 auto 22px;
 			transform: translateX(-1px);
 			position: relative;
-			z-index: 1;
-			border: 1px solid $headerscolor;
 			&__pic {
 				position: absolute;
 				top: 0;
 				left: 50%;
 				transform: translate(-50%,-3.5%);
-				z-index: 0;
 			}
 		}
 		.fa-quote-right {
@@ -503,7 +500,6 @@ img {
 			letter-spacing: $primarytracking;
 			line-height: 1;
 			color: $subheaderscolor;
-			z-index: 2;
 		}
 		&__name {
 			font-family: 'Roboto Slab', serif;

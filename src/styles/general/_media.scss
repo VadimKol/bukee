@@ -381,6 +381,10 @@
 #{$safari} .flex-books-item {
     width: 32.5%;
 }
+#{$safari} .slider-item .ava {
+    -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+    mask-image: radial-gradient(circle, white, black);
+}
 #{$safari} .form__email {
     width: 90.192644483%;
 }
