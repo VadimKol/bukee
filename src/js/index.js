@@ -9,7 +9,7 @@ $(document).ready(function(){
         $(".toc__btn").click(function(){
             $(".page-contents").css("padding","72px 0");
         });
-        if ($(".box-contents").css("flex-direction") !== "column") {
+        if ($(".box-contents").css("display") !== "block") {
             $(".page-testimonials").css("padding","95px 0 89px");
             $(".slider-item").css("padding","5px 0 0");
         }
@@ -19,7 +19,7 @@ $(document).ready(function(){
         $(".toc__btn").click(function(){
             $(".page-contents").css("padding","143px 0 144px");
         });
-        if ($(".box-contents").css("flex-direction") !== "column") {
+        if ($(".box-contents").css("display") !== "block") {
             $(".page-testimonials").css("padding","190px 0 178px");
             $(".slider-item").css("padding","5px 186px 0");
         }
@@ -39,7 +39,7 @@ $(document).ready(function(){
             $(".toc__btn").click(function(){
                 $(".page-contents").css("padding","72px 0");
             });
-            if ($(".box-contents").css("flex-direction") !== "column") {
+            if ($(".box-contents").css("display") !== "block") {
                 $(".page-testimonials").css("padding","95px 0 89px");
                 $(".slider-item").css("padding","5px 0 0");
             }
@@ -52,7 +52,7 @@ $(document).ready(function(){
             $(".toc__btn").click(function(){
                 $(".page-contents").css("padding","143px 0 144px");
             });
-            if ($(".box-contents").css("flex-direction") !== "column") {
+            if ($(".box-contents").css("display") !== "block") {
                 $(".page-testimonials").css("padding","190px 0 178px");
                 $(".slider-item").css("padding","5px 186px 0");
             }
@@ -95,7 +95,7 @@ $(document).ready(function(){
         $(this).hide();
     });
     //slick
-    if ($(".box-contents").css("flex-direction") !== "column") {
+    if ($(".box-contents").css("display") !== "block") {
         $(".bg-black-left").height("100%");
         $(".bg-black-right").height("100%");
         $(".slider").slick({

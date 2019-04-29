@@ -119,8 +119,12 @@
         &-item {
             flex-basis: auto;
             width: 100%;
+            margin-bottom: 24px;
             &:first-child, &:last-child {
                 flex-basis: auto;
+            }
+            &:last-child {
+                margin-bottom: 0;
             }
         }
     }
@@ -371,7 +375,7 @@
     width: 461px;
 }
 #{$safari} .box-contents {
-    flex-direction: column;
+    display: block;
 }
 #{$safari} .flex-books-item {
     width: 32.5%;
