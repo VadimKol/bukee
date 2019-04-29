@@ -32,19 +32,19 @@
     }
     .headerbox {
         &-book {
-            flex-basis: 368px;
-            height: 480px;
-            padding: 96px 0 0 33px;
-            margin-right: 37px;
+            flex-basis: 353px;
+            height: 459px;
+            padding: 92px 0 0 31px;
+            margin-right: 36px;
             &__title {
                 margin: 0 0 354px;
             }
             &__author {
-                padding-left: 45px;
+                padding-left: 43px;
             }
         }
         &-desc {
-            flex-basis: 461px;
+            flex-basis: 479px;
         }
     }
     /*page-stats*/
@@ -171,8 +171,8 @@
         flex-direction: column-reverse;
         align-items: center;
         &-book {
-            flex-basis: 480px;
-            width: 368px;
+            flex-basis: 459px;
+            width: 353px;
             margin: 20px auto 0;
         }
         &-desc {
@@ -370,10 +370,10 @@
     width: 72%;
 }
 #{$safari} .headerbox-book {
-    width: 368px;
+    width: 353px;
 }
 #{$safari} .headerbox-desc {
-    width: 461px;
+    width: 479px;
 }
 #{$safari} .box-contents {
     display: block;
