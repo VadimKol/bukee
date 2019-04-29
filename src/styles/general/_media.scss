@@ -18,9 +18,11 @@
         width: 435px;
         &--left {
             flex-basis: 704px;
+            transform: translateX(-5.8635%);
         }
         &--right {
             flex-basis: 558px;
+            transform: translateX(5.059%);
         }
     }
     /*page-main*/
