@@ -546,8 +546,8 @@ img {
 			width: 8px;
 			height: 8px;
 			border-radius: 4px;
-			background-color: rgba(101,228,206,0.7);
-			background: linear-gradient(-90deg, rgba(101,228,206,0.7) 0%, rgba(101,228,161,0.7) 100%) $headerscolor;
+			background-color: rgba(101,228,206,0.9);
+			background: linear-gradient(-90deg, rgba(101,228,206,0.9) 0%, rgba(101,228,161,0.9) 100%) $headerscolor;
 			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#65e4ce', endColorstr='#65e4a1', GradientType=1);
 			transition: width 0.2s;
 		}
